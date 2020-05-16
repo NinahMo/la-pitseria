@@ -1,0 +1,7 @@
+.section1{
+    background: url(css/images/pizza.bg.jpg) no-repeat;
+    padding: 10;
+    margin: 0;
+    background-size: cover;
+    position: relative;
+}
