@@ -2,6 +2,13 @@ body {
     background-color: orangered;
     font-size: xx-large;
 }
+.section1{
+    background: url(css/images/pizza.bg.jpg) no-repeat;
+    padding: 50;
+    margin: 0;
+    background-size: cover;
+    position: relative;
+}
 .card-deck {
     padding: 5% 1%;
 }
