@@ -1,13 +1,27 @@
 body {
     background-color: orangered;
     font-size: xx-large;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow-x: hidden;
 }
+
 .section1{
-    background: url(css/images/pizza.bg.jpg) no-repeat;
+    background-image: url(images/pizza.bg.jpg) no-repeat;
     padding: 50;
     margin: 0;
-    background-size: cover;
     position: relative;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+.section2{
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+
+}
+.section3{
+font-family: 'Caveat', cursive;
 }
 .card-deck {
     padding: 5% 1%;
@@ -16,6 +30,8 @@ body {
     margin: 10px 0;
     position: relative;
     overflow: hidden;
+    background: transparent;
+    text-align: center;
 }
 .form{
     background: transparent;
