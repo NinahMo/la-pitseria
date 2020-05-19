@@ -1,221 +1,77 @@
-// bussiness logic
+// BUSINESS LOGIC
+var outputname = function  (){
+    var size = (document.getElementByName('choose').value).toUpperCase();
+    var toppings = (document.getElementByName('select').value).toUpperCase();
+    var crust = (document.getElementByName('select').value).toUpperCase();
+    var delivery = (document.getElementById('delivery').value).toUpperCase();
+    var pickup = (document.getElementById('pickup').value).toUpperCase();
 
-function TotalAmount(size, crust, toppings) {
-    this.sizeName = size;
-    this.crustName = crust;
-    this.toppingsName = toppings;
-}
-    var pizzaSize;
-    var pizzaCrust;
-    var pizzaToppings=[];
-    var delivery;
-    var totaltopping;
-    
-    function getToppingPrice(){
-      return pizzaToppings.length * 100
-    };
-    function getTotal(){
-        return pizzaCrust + pizzaSize + delivery + getToppingPrice();
-    };
-    var singlePizzaPrice;
-var deliveryPrice = 300;
-order.prototype.price = function () {
-  var smallPrice = 600;
-  var mediumPrice = 800;
-  var largePrice = 1000;
-  var extraLargePrice = 1200;
-  var crustPrice;
-  var singleToppingPrice;
-  var toppingsPrice = 0;
-  var totalPrice;
-  switch (this.crust) {
-    case "thinCrust":
-      crustPrice = 100;
-      break;
-    case "thickCrust":
-      crustPrice = 100;
-      break;
-    case "glutten-free":
-      crustPrice = 150;
-      break;
-    case "meatStuffedCrust":
-      crustPrice = 150;
-      break;
-    case "cheeseStuffedCrust":
-      crustPrice = 150;
-    default:
-      crustPrice = 0;
+    var x = size;
+    var y = toppings;
+    var z = crust;
+    var d = delivery;
+    var p = pickup
+    var total = [600, 800, 1000, 1200, 200, 150];
+};    
+//USER INTERFACE
+if(!isNaN(size)) {
+    alert("please enter a standard Size");
+    return;
+  }else if(x=="SMALL" && d=="YES"){
+    document.getElementById("dem").innerHTML="PIZZA SIZE  "+ x + " Ksh 600";
+    document.getElementById("re").innerHTML="DELIVERY COST IS  Ksh 300";
+    total = total[0] + total[3] + total[4];
+    var s = (prompt("Please add your location for delivery."));
+    alert("Thank for reaching out to us. Your Order will be delivered to "+s );
+  }else if(x=="MEDIUM" && d=="YES") {
+    document.getElementById("dem").innerHTML="PIZZA SIZE  "+ x + " Ksh 800";
+    document.getElementById("re").innerHTML="DELIVERY COST IS  Ksh 300";
+     total = total[1] + total[3] + total[4];
+     var m = (prompt("Please your location for delivery."));
+     alert("Thank for reaching out to us. Your Order will be delivered to "+m );
+  }else if(x=="LARGE" && d=="YES"){
+    document.getElementById("dem").innerHTML="PIZZA SIZE  "+ x + " Ksh 1000";
+    document.getElementById("re").innerHTML="DELIVERY COST IS  Ksh 300";
+    total = total[2] + total[3] + total[4];
+    var l = (prompt("Please your location for delivery."));
+    alert("Thank for reaching out to us. Your Order will be delivered to "+l );
+  }else if(x=="EXTRALARGE" && d=="YES"){
+    document.getElementById("dem").innerHTML="PIZZA SIZE  "+ x + " Ksh 1200";
+    document.getElementById("re").innerHTML="DELIVERY COST IS  Ksh 300";
+    total = total[2] + total[3] + total[4];
+    var l = (prompt("Please your location for delivery."));
+    alert("Thank for reaching out to us. Your Order will be delivered to "+l );
+  
+  }else if(x=="SMALL"){
+      document.getElementById("dem").innerHTML="PIZZA SIZE  "+ x + " Ksh 600";
+      total = total[0] + total[3];
+    }else if(x=="MEDIUM") {
+      document.getElementById("dem").innerHTML="PIZZA SIZE  "+ x + " Ksh 800";
+       total = total[1] + total[3];
+    }else if(x=="LARGE"){
+      document.getElementById("dem").innerHTML="PIZZA SIZE  "+ x + " Ksh 1000";
+      total = total[2] + total[3];
+    }else if(x=="EXTRALARGE"){
+        document.getElementById("dem").innerHTML="PIZZA SIZE  "+ x + " Ksh 1200";
+        total = total[2] + total[3];
+  }else if (isNaN(size)) {
+    alert("please enter a standard Size");
+    return;
   }
-  if (this.size == "small") {
-    this.toppings.forEach(function(topping) {
-      switch (topping) {
-        case "pepperoni":
-          singleToppingPrice = 100;
-          break;
-        case "margheritta":
-          singleToppingPrice = 80;
-          break;
-        case "cheese(extra)":
-          singleToppingPrice = 100;
-          break;
-        case "barbeque":
-          singleToppingPrice = 100;
-          break;
-        case "capricciosa":
-          singleToppingPrice = 120;
-          break;
-        case "pineapple/ham":
-          singleToppingPrice = 100;
-          break;
-        case "supreme":
-          singleToppingPrice = 120;
-          break;
-        case "sausage/kales":
-          singleToppingPrice = 100;
-          break;
-        case "potatoes/rosemary":
-          singleToppingPrice = 80;
-          break;
-        default:
-          singleToppingPrice = 0;
-      }
-      toppingsPrice += singleToppingPrice;
-    });
-    singlePizzaPrice = toppingsPrice + crustPrice + smallPrice;
-    if (this.deliver == "yes") {
-      totalPrice = (singlePizzaPrice * this.quantity) + deliveryPrice;
-    } else {
-      totalPrice = singlePizzaPrice * this.quantity;
-    }
+  
+  if (y=="PEPPERONI" || y=="MARGHERITA" || y=="BARBEQUE" || y=="CAPRICCIOSA" || y=="PINEAPPLE/HAM" || y=="SUPREME" || y=="SAUSAGE/KALES" || y=="POTATOES/ROSEMARY" || y=="EXTRA CHEESE" ) {
+      document.getElementByName("check").innerHTML="TOPPPING:  "+ y + "Ksh 100";
+  }else {
+    alert("Please enter your preferred topping.");
+    return;
   }
-  if (this.size == "medium") {
-    this.toppings.forEach(function(topping) {
-      switch (topping) {
-        case "pepperoni":
-          singleToppingPrice = 100;
-          break;
-        case "margheritta":
-          singleToppingPrice = 80;
-          break;
-        case "cheese(extra)":
-          singleToppingPrice = 100;
-          break;
-        case "barbeque":
-          singleToppingPrice = 100;
-          break;
-        case "capricciosa":
-          singleToppingPrice = 120;
-          break;
-        case "pineapple/ham":
-          singleToppingPrice = 100;
-          break;
-        case "supreme":
-          singleToppingPrice = 120;
-          break;
-        case "sausage/kales":
-          singleToppingPrice = 100;
-          break;
-        case "potatoes/rosemary":
-          singleToppingPrice = 80;
-          break;
-        default:
-          singleToppingPrice = 0;
-      }
-      toppingsPrice += singleToppingPrice;
-    });
-    singlePizzaPrice = toppingsPrice + crustPrice + mediumPrice;
-    if (this.deliver == "yes") {
-      totalPrice = (singlePizzaPrice * this.quantity) + deliveryPrice;
-    } else {
-      totalPrice = singlePizzaPrice * this.quantity;
-    }
+  
+  if (z=="THIN CRUST" || z=="THICK CRUST" || z=="GLUTEN-FREE" || z=="MEAT-STUFFED CRUST" || z=="CHEESE-STUFFED CRUST" ) {
+      document.getElementByName("choose").innerHTML="CRUST:  "+ z + "Ksh 100";
   }
-  if (this.size == "large") {
-    this.toppings.forEach(function(topping) {
-      switch (topping) {
-        case "pepperoni":
-          singleToppingPrice = 100;
-          break;
-        case "margheritta":
-          singleToppingPrice = 80;
-          break;
-        case "cheese(extra)":
-          singleToppingPrice = 100;
-          break;
-        case "barbeque":
-          singleToppingPrice = 100;
-          break;
-        case "capricciosa":
-          singleToppingPrice = 120;
-          break;
-        case "pineapple/ham":
-          singleToppingPrice = 100;
-          break;
-        case "supreme":
-          singleToppingPrice = 120;
-          break;
-        case "sausage/kales":
-          singleToppingPrice = 100;
-          break;
-        case "potatoes/rosemary":
-          singleToppingPrice = 80;
-          break;
-        default:
-          singleToppingPrice = 0;
-      }
-      toppingsPrice += singleToppingPrice;
-    });
-    if (this.size == "extraLarge") {
-        this.toppings.forEach(function(topping) {
-      switch (topping) {
-        case "pepperoni":
-        singleToppingPrice = 100;
-        break;
-        case "margheritta":
-        singleToppingPrice = 80;
-        break;
-        case "cheese(extra)":
-        singleToppingPrice = 100;
-        break;
-        case "barbeque":
-        singleToppingPrice = 100;
-        break;
-        case "capricciosa":
-        singleToppingPrice = 120;
-        break;
-        case "pineapple/ham":
-        singleToppingPrice = 100;
-        break;
-        case "supreme":
-        singleToppingPrice = 120;
-        break;
-        case "sausage/kales":
-        singleToppingPrice = 100;
-        break;
-        case "potatoes/rosemary":
-        singleToppingPrice = 80;
-        break;
-       default:
-        singleToppingPrice = 0;
-        }
-         toppingsPrice += singleToppingPrice;
-        });
-        singlePizzaPrice = toppingsPrice + crustPrice + smallPrice;
-        if (this.deliver == "yes") {
-          totalPrice = (singlePizzaPrice * this.quantity) + deliveryPrice;
-        } else {
-          totalPrice = singlePizzaPrice * this.quantity;
-        }
-      }
-    ("form").click(function (ninah) {
-        var client = document.getElementByName('place-your-order').value;
-        alert(' Dear ' + 'customer' + ' your order has been received successfully and will be delievred to your respective location.')
-        ninah.preventDefault();
-      });
-    
-function yourOrder() {
-  var yourOrder = getCookie("name");
-  var pizza = getCookie("pizzaType");
-  return yourOrder + " ordered a " + pizza + " pizza";
-    }
-}};
+  else {
+    alert("Please enter your preferred crust.");
+    return;
+  }
+    document.getElementById("demoos").innerHTML="TOTAL IS "+ total;
+

@@ -7,6 +7,18 @@ body {
     overflow-x: hidden;
 }
 
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 .section1{
     background-image: url(images/pizza.bg.jpg) no-repeat;
     padding: 50;
@@ -32,6 +44,8 @@ font-family: 'Caveat', cursive;
     overflow: hidden;
     background: transparent;
     text-align: center;
+    margin: 10px 0;
+    position: relative;       
 }
 .form{
     background: transparent;
