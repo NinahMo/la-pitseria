@@ -76,7 +76,7 @@ font-family: 'Caveat', cursive;
     padding: 5% 1%;
 }
 .card {
-    margin: 10px 0;
+    margin: 10px 0;     
     position: relative;
     overflow: hidden;
     background: transparent;
