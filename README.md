@@ -3,7 +3,7 @@
 ####Author
 ####NinahMO
 ##Description
-a website that contains a variety of pizza types, sizes, crusts and toppings for the customers. You order we deliver any time at your comfort.
+a website that contains a variety of pizza types, sizes, crusts and toppings for user to pick when placing an order. You order we deliver any time at your comfort.
 
 ##Setup/Installation Requirements
 git clone https://github.com/NinahMo/la-pitseria.git

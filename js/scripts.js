@@ -145,3 +145,18 @@ $(document).ready(function() {
         alert("Your pizza will be delivered in" + place);
     });
 })
+
+//business logic
+let cart = [];
+
+let newOrdercart = [];
+ let netPrice = 0
+
+function Pizza(size, toppings, crust, quantity, type, price) {
+  this.size = size;
+  this.crust = crust;
+  this.toppings = toppings;
+  this.quantity = quantity;
+  this.type = type;
+  this.price = price;
+}
