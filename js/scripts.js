@@ -1,4 +1,3 @@
-
 //user interface logic
 $(document).ready(function() {
   $("#add").click(function(e) {
@@ -10,7 +9,7 @@ $(document).ready(function() {
     var crust = $("#crust").val();
     var topping = $("#toppings").val();
     var type = $("input[name=pizzaType]:checked").val();
-
+     
 
     const pizzaSizes = [
       {
