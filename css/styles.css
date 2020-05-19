@@ -1,5 +1,42 @@
 body {
-    background-color: orangered;
+    background-image: url(images/pizza.bg.jpg);
+    background-size: cover;
+    font-family: "Henny Penny", cursive;
+  
+  }
+  .first {
+    text-align: center;
+    font-family: "Henny Penny", cursive;
+    padding: 25px;
+    color: black;
+    height: 150px;
+  }
+  .btn {
+    float: right;
+  }
+  .one {
+    padding: 10px;
+    float: right;
+    background: transparent;
+    color: white;
+    font-family: "Henny Penny", cursive;
+  }
+  .card{
+      float: right;
+      background: transparent;
+      color: black;
+      font-weight: bolder;
+  }
+
+
+
+
+
+
+
+
+body {
+    background-color: black;
     font-size: xx-large;
     margin: 0;
     padding: 0;

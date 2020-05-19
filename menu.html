@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link href="css/bootstrap.css" rel="stylesheet"/>
+    <link href="css/menu.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Henny+Penny&display=swap" rel="stylesheet"/>
+    <title>LA-PITSERIA</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>LA-PITSERIA!</h1>
+      <h2>~PIZZA THAT SLAPS!!</h2>
+      <h3>~SPICES THAT TURN UP YOUR TASTE BUDS!!!</h3>
+      <div class="btn">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+      </div>
+      <p><BR></p>
+      <button type="submit" id="view" class="span view">
+          <span class="cartTotal"> </span>
+          <span class="cartSum">
+              0
+      </span>
+         <span> View Cart</span></button>
+    </div>
+    <div class="container">
+      <h3 style="color: black">SELECT YOUR PIZZA</h3>
+      <div class="row scroll-y">
+        <!-- <div class="col-md-2"> -->
+        <label>
+          <input type="radio" name="pizzaType" value="margherita" id="margherita"/>
+          <div class="card pizza-box">
+            <img src="css/images/toppings/Margheritav.jpg" alt="" class="one" />
+            <h4>Margherita</h4>
+          </div>
+        </label>
+        <!-- </div> -->
+        <!-- <div class="col-md-2"> -->
+        <label>
+          <input type="radio" name="pizzaType" value="barbeque" id="barbeque"/>
+          <div class="card pizza-box">
+            <img src="css/images/toppings/bbqm.jpg" alt="" class="one"/>
+            <h4>Barbeque</h4>
+          </div>
+        </label>
+        <!-- </div> -->
+        <!-- <div class="col-md-2"> -->
+        <label>
+          <input type="radio" name="pizzaType" value="ham and pineapple" id="ham and pineapple"/>
+          <div class="card pizza-box">
+            <img src="css/images/toppings/Ham-and-Pineapplem.jpg" alt="" class="one"/>
+            <h4>Ham and Pineapple</h4>
+          </div>
+        </label>
+        <!-- </div> -->
+        <label>
+          <input type="radio" name="pizzaType" value="pepperoni" id="pepperoni" />
+          <div class="card pizza-box">
+            <img src="css/images/toppings/pepperonim.jpg" alt="" class="one" />
+            <h4>Pepperoni</h4>
+          </div>
+        </label>
+        <label>
+          <input type="radio" name="pizzaType" value="potato and rosemary" id="potato and rosemary" />
+          <div class="card pizza-box">
+            <img src="css/images/toppings/Potato-Rosemaryv.jpg" alt="" class="one" />
+            <h4>Potato and Rosemary</h4>
+          </div>
+        </label>
+        <label>
+          <input type="radio" name="pizzaType" value="prawn" id="prawn"/>
+          <div class="card pizza-box">
+            <img src="css/images/toppings/Prawnv.jpg" alt="" class="one" />
+            <h4>Prawn</h4>
+          </div>
+        </label>
+        <label>
+          <input type="radio" name="pizzaType" value="quattro formaggio" id="quattro formaggio"/>
+          <div class="card pizza-box">
+            <img src="css/images/toppings/Quattro Formaggio.jpg" alt="" class="one" />
+            <h4>Quattro Formaggio</h4>
+          </div>
+        </label>
+        <label>
+          <input type="radio" name="pizzaType" value="sausage and kales" id="sausage and kales"/>
+          <div class="card pizza-box">
+            <img src="css/images/toppings/Sausage and kalemv.jpg" alt="" class="one" />
+            <h4>Sausage and Kales</h4>
+          </div>
+        </label>
+        <label>
+          <input type="radio" name="pizzaType" value="supreme" id="supreme"/>
+          <div class="card pizza-box">
+            <img src="css/images/toppings/supremem.jpg" alt="" class="one" />
+            <h4>Supreme</h4>
+          </div>
+        </label>
+      </div>
+      <div class="row extras">
+        <div class="form-group">
+          <label for="Size" style="color: white">Choose size</label>
+          <select name="size" id="size" class="form-control">
+            <option value="extra large">extra large 1200</option>
+            <option value="large">Large 1000</option>
+            <option value="medium">Medium 800</option>
+            <option value="small">Small 600</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="toppings" style="color: white">Toppings</label>
+          <select name="toppings" id="toppings" class="form-control">
+            <option value="none">None</option>
+            <option value="pepperoni">beef 150</option>
+            <option value="Mushroom">chicken 100</option>
+            <option value="extra cheese">Extra cheese 150</option>
+            <option value="sausage">Sausage 150</option>
+            <option value="onions">Onions 100</option>
+            <option value="pineapple">Pineapple 150</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="Size" style="color: white">Crust</label>
+          <select name="crust" id="crust" class="form-control">
+            <option value="thin crust">Thin crust 100</option>
+            <option value="thick crust">Thick crust 100</option>
+            <option value="gluten-free">Gluten-free 150</option>
+            <option value="meat-stuffed">Meat-stuffed 150</option>
+            <option value="cheese-stuffed">Cheese-stuffed 150</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="quantity" style="color: white">Quantity</label>
+          <input type="number" id="quantity" class="form-control" value="1" />
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: row">
+        <button id="add" class="btn button">Add to cart</button>
+      </div>
+    </div>
+
+    <div class="cart-wrapper">
+        <div class="cart-container">
+            <h2>Checkout</h2>
+            
+            <ul id="orders">
+
+            </ul>
+            <div class="row">
+              <div> 
+                Total
+              </div>
+                <div class="cartTotal">
+              
+                  </div>
+            </div>
+            <label for="button">Click here for delivery<button id="deliver">Pizza Delivery</button></label>
+            <button class="btn button" id="checkout">Checkout</button>
+        </div>
+    </div>
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

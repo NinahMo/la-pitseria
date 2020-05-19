@@ -1,6 +1,6 @@
 #LA-PITSERIA
 ##An application that allows you to place a pizza order and delivers it to you.
-###Author
+####Author
 ####NinahMO
 ##Description
 a website that contains a variety of pizza types, sizes, crusts and toppings for the customers. You order we deliver any time at your comfort.
@@ -21,7 +21,7 @@ Bootstrap
 ##Support and contact details
 Any difficulties in accessing the code or in it's operations? Comments, concerns, ideas or evens questions. Kindly contact me at ninahb746@gmail.com 
 
-##License
+###License
 MIT License
 
 Copyright (c) 2020 Ninah Mosoti
