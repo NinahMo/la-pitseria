@@ -1,7 +1,7 @@
 body{
     background-image: url(images/pizza.bg.jpg);
     background-size: cover;
-    font-family: "Henny Penny", cursive;
+    font-family: 'Niconne', cursive;
 
 }
 .jumbotron{
@@ -10,7 +10,7 @@ body{
     color: black;
     text-align: center;
     padding: 25px;
-    font-family: "Henny Penny", cursive;
+    font-family: 'Frijole', cursive;
 
 }
 /* .first{

@@ -1,12 +1,12 @@
 body {
     background-image: url(images/pizza.bg.jpg);
     background-size: cover;
-    font-family: "Henny Penny", cursive;
+    font-family: 'Niconne', cursive;
   
   }
   .first {
     text-align: center;
-    font-family: "Henny Penny", cursive;
+    font-family: 'Frijole', cursive;
     padding: 25px;
     color: black;
     height: 150px;
@@ -26,15 +26,8 @@ body {
       background: transparent;
       color: black;
       font-weight: bolder;
+      font-size: 1ch;
   }
-
-
-
-
-
-
-
-
 body {
     background-color: black;
     font-size: xx-large;
