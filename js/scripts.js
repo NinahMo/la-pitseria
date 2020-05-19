@@ -13,7 +13,7 @@ $(document).ready(function() {
 
     const pizzaSizes = [
       {
-        size: "mega",
+        size: "extra large",
         price: 1200
       },
       {
@@ -26,40 +26,46 @@ $(document).ready(function() {
       },
       {
         size: "small",
-        price: 500
+        price: 600
       }
     ];
-    const pp = pizzaSizes.find(u => u.size === pSize);
+    const pp = pizzaSizes.find(u => u.size === size);
     console.log(pp.price);
     var pizzaCrusts = [
       {
-        crust: "stuffed",
-        price: 200
+        crust: "thin crust",
+        price: 100
+      },
+      { 
+        crust: "thick crust",
+        price: 100
       },
       {
         crust: "gluten-free",
-        price: 250
+        price: 150
       },
       {
-        crust: "crispy",
-        price: 200
+        crust: "meat-stuffed",
+        price: 150
+      },
+      {
+        crust: "cheese-stuffed",
+        price: 150
       }
     ];
-    const resultCrust = pizzaCrusts.find(u => u.crust === pCrust);
+    const resultCrust = pizzaCrusts.find(u => u.crust === crust);
     console.log(resultCrust.price);
 
     const pizzaToppings = [
       { topping: "none", price: 0 },
-      { topping: "pepperoni", price: 150 },
-      { topping: "Mushroom", price: 100 },
-      { topping: "Blackolives", price: 150 },
-      { topping: "Greenpeppers", price: 100 },
+      { topping: "Beef", price: 150 },
+      { topping: "Chicken", price: 100 },
       { topping: "extra cheese", price: 150 },
       { topping: "sausage", price: 150 },
       { topping: "onions", price: 100 },
       { topping: "pineapple", price: 150 }
     ];
-    const resultToppings=pizzaToppings.find(u=> u.topping===pTop);
+    const resultToppings=pizzaToppings.find(u=> u.topping===toppings);
     console.log(resultToppings.price)
     var size=parseInt(pp.price);
     // alert(size)
@@ -82,7 +88,7 @@ $(document).ready(function() {
         var grandTotal=totalPrice(results,quantity);
         // alert(grandTotal);
 
-        var newOrder = new Pizza(pSize, pTop, pCrust, pQuant, pType, grandTotal);
+        var newOrder = new Pizza(size, topping, crust, quantity, type, grandTotal);
         cart.push(newOrder);
         // $(".cartSum").html(cart);
         // console.log(cart)
