@@ -1,27 +1,30 @@
-#LA-PITSERIA
-##An application that allows you to place a pizza order and delivers it to you.
-####Author
-####NinahMO
-##Description
-a website that contains a variety of pizza types, sizes, crusts and toppings for user to pick when placing an order. You order we deliver any time at your comfort.
+# LA-PITSERIA
+## An application that allows you to place a pizza order and ensures delivery is made to the location you keyed in.
+#### Author
+#### NinahMo
+## Description
+A website that contains a variety of pizza types, sizes, crusts and toppings for user to pick when placing an order. You order we deliver any time at your comfort.
 
-##Setup/Installation Requirements
-git clone https://github.com/NinahMo/la-pitseria.git
-cd la-pitseria
-open index.html using atom . or code .
+## live site
+ https://ninahmo.github.io/la-pitseria/
 
-##Technologies Used
-HTML
-CSS
-javaScript
-jquery
-Bootstrap
-##Behavior Driven Development.
+## Setup/Installation Requirements
+- git clone https://github.com/NinahMo/la-pitseria.git
+- navigate into la-pitseria directory
+- open the html file using atom . or code .
 
-##Support and contact details
-Any difficulties in accessing the code or in it's operations? Comments, concerns, ideas or evens questions. Kindly contact me at ninahb746@gmail.com 
+## Technologies Used
+- HTML
+- CSS
+- javaScript
+- jquery
+- Bootstrap
+## Behavior Driven Development.
 
-###License
+## Support and contact details
+For any difficulties accessing the code, comments, concerns, ideas or any form of questions. Kindly contact me at ninahb746@gmail.com 
+
+### License
 MIT License
 
 Copyright (c) 2020 Ninah Mosoti

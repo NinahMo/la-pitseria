@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <link href="css/bootstrap.css" rel="stylesheet"/>
-    <link href="css/menu.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/scripts.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Niconne&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
     <title>LA-PITSERIA</title>
@@ -28,9 +30,16 @@
          <span> View Cart</span></button>
     </div>
     <div class="container">
-      <h3 style="color: black">SELECT YOUR PIZZA</h3>
+      <h3 style="color: orangered">SELECT YOUR PIZZA</h3>
       <div class="row scroll-y">
-        <!-- <div class="col-md-2"> -->
+        <label>
+          <input type="radio" name="pizzaType" value="heart-shaped" id="heart-shaped"></input>
+          <div class="card pizza-box">
+            <img src="css/images/valentines.jpg" alt="" class="one">
+            <h3>Heart-shaped(*NEW*)</h3>
+            <p>Couples we got you!!</p>
+          </div>
+        </label>
         <label>
           <input type="radio" name="pizzaType" value="margherita" id="margherita"/>
           <div class="card pizza-box">
@@ -38,8 +47,6 @@
             <h4>Margherita</h4>
           </div>
         </label>
-        <!-- </div> -->
-        <!-- <div class="col-md-2"> -->
         <label>
           <input type="radio" name="pizzaType" value="barbeque" id="barbeque"/>
           <div class="card pizza-box">
@@ -47,16 +54,13 @@
             <h4>Barbeque</h4>
           </div>
         </label>
-        <!-- </div> -->
-        <!-- <div class="col-md-2"> -->
         <label>
-          <input type="radio" name="pizzaType" value="ham and pineapple" id="ham and pineapple"/>
+          <input type="radio" name="pizzaType" value="hawaiian" id="hawaiian"/>
           <div class="card pizza-box">
             <img src="css/images/toppings/Ham-and-Pineapplem.jpg" alt="" class="one"/>
-            <h4>Ham and Pineapple</h4>
+            <h4>Hawaiian</h4>
           </div>
         </label>
-        <!-- </div> -->
         <label>
           <input type="radio" name="pizzaType" value="pepperoni" id="pepperoni" />
           <div class="card pizza-box">
@@ -70,7 +74,7 @@
             <img src="css/images/toppings/Potato-Rosemaryv.jpg" alt="" class="one" />
             <h4>Potato and Rosemary</h4>
           </div>
-        </label>
+        </label>          
         <label>
           <input type="radio" name="pizzaType" value="prawn" id="prawn"/>
           <div class="card pizza-box">
@@ -102,7 +106,7 @@
       </div>
       <div class="row extras">
         <div class="form-group">
-          <label for="Size" style="color: white">Choose size</label>
+          <label for="Size" style="color: black">Choose size</label>
           <select name="size" id="size" class="form-control">
             <option value="extra large">extra large 1200</option>
             <option value="large">Large 1000</option>
@@ -141,27 +145,17 @@
         <button id="add" class="btn button">Add to cart</button>
       </div>
     </div>
-
     <div class="cart-wrapper">
         <div class="cart-container">
             <h2>Checkout</h2>
-            
-            <ul id="orders">
-
-            </ul>
+        </div>      
             <div class="row">
-              <div> 
-                Total
-              </div>
-                <div class="cartTotal">
-              
-                  </div>
-            </div>
+             <div class="col-md-12 offset-mx-12">
+              <h3>Total</h3>
             <label for="button">Click here for delivery<button id="deliver">Pizza Delivery</button></label>
             <button class="btn button" id="checkout">Checkout</button>
+             </div>            
         </div>
     </div>
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts.js"></script>
   </body>
 </html>

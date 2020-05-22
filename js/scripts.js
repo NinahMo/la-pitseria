@@ -2,8 +2,8 @@
 $(document).ready(function() {
   $("#add").click(function(e) {
     e.preventDefault();
-    // $(".cart-wrapper").slideToggle();
-    // $(".cart-container").slideDown();
+    $(".cart-wrapper").slideToggle();
+    $(".cart-container").slideDown();
     var size = $("#size").val();
     var quantity = $("#quantity").val();
     var crust = $("#crust").val();
@@ -68,40 +68,37 @@ $(document).ready(function() {
     const resultToppings=pizzaToppings.find(u=> u.topping===toppings);
     console.log(resultToppings.price)
     var size=parseInt(pp.price);
-    // alert(size)
+     alert(size)
     var crust= parseInt(resultCrust.price);
-    // alert(crust)
+     alert(crust)
     var toppings=parseInt(resultToppings.price);
-    // alert(toppings);
-    var quantity=parseInt(pQuant);
-
-    // alert(quantity)
+     alert(toppings);
+    var quantity=parseInt(quantity);
+     alert(quantity)
     function total(toppings,crust,size) {
        return toppings+crust+size;
         
     }
     var results=total(toppings,crust,size);
-        // alert(results)
+         alert(results)
         function totalPrice(results,quantity) {
             return results*quantity;
         }
         var grandTotal=totalPrice(results,quantity);
-        // alert(grandTotal);
+         alert(grandTotal);
 
         var newOrder = new Pizza(size, topping, crust, quantity, type, grandTotal);
         cart.push(newOrder);
-        // $(".cartSum").html(cart);
-        // console.log(cart)
+         $(".cartSum").html(cart);
+         console.log(cart)
         var yes = cart.reduce((accumulator, currentValue) => 
             accumulator + currentValue.price, 0
         )
-        console.log(yes)
         $(".cartTotal").html(yes);
-
+        console.log(yes)
         $(".cartSum").html(cart.length);
-
         cart.map(({
-            crust,
+        crust,
         quantity,
         size,
         toppings,
