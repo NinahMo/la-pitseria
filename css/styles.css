@@ -20,7 +20,7 @@ body {
   }
   .one {
     padding: 10px;
-    float: right;
+    float: right; 
     background: transparent;
     color: white;
     font-family: "Henny Penny", cursive;
@@ -30,7 +30,7 @@ body {
       background: transparent;  
       color: black;
       font-weight: bolder;
-      font-size: 40px;
+      font-size: 40px; 
   }
 body {
     background-color: black;
