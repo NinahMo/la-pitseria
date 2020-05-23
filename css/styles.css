@@ -27,7 +27,7 @@ body {
   }
   .card{
       float: right;
-      background: transparent;
+      background: transparent;  
       color: black;
       font-weight: bolder;
       font-size: 40px;
