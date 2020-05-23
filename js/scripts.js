@@ -1,10 +1,3 @@
-// $(document).ready(function(){
-
-//   $('.header').height($(window).height());
-
-// })
-
-
 
 var del = 400;
 
@@ -70,7 +63,6 @@ Order.prototype.pizzaCost = function () {
 
  this.pizzaPrice *= this.pizzaNumber;
 
- //this.pizzaPrice *= this.pizzaNumbers;
 
  return this.pizzaPrice;
 
@@ -90,25 +82,9 @@ Order.prototype.finalCost = function () {
 
 }
 
-// Order.prototype.numberOfPizza = function () {
-
-//     for(var j = 1; j < pizzaNumbers.length; j++){
-
-//         var  pizzaNumber = finalCost() * pizzaNumber[j];
-
-//     }
-
-//         return pizzaNumber;
-
-//       }
-
-//User Interface Logic
-
 $(document).ready(function() { 
 
   $(".header").height($(window).height());
-
-
 
   $("#orders").click(function(){
 
@@ -139,11 +115,6 @@ $(document).ready(function() {
    newPizzaOrder.pizzaCost();
 
    PizzatotalPrice.push(newPizzaOrder.pizzaPrice);
-
-
-
-//$("h4").show(); iipp
-
 
 
    $("#pizzaDetails").show();
@@ -200,7 +171,6 @@ $("button#checkout").click(function(event){
 
    $("#check").text(check);
 
-   // console.log(check);
 
 });
 

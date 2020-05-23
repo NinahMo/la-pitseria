@@ -1,38 +1,37 @@
 h4 {
-  color: orangered;
-  font-weight: bolder;
-  font-size: 50px;
+    font-weight: bold;
+    color: orangered;
 }
 body {
     background-image: url(images/pizza.bg.jpg);
     background-size: cover;
     font-family: 'Niconne', cursive;
-
-}
-.first {
+  
+  }
+  .first {
     text-align: center;
     font-family: 'Frijole', cursive;
     padding: 25px;
     color: black;
     height: 150px;
-}
-.btn {
+  }
+  .btn {
     float: right;
-}
-.one {
+  }
+  .one {
     padding: 10px;
     float: right;
     background: transparent;
     color: white;
     font-family: "Henny Penny", cursive;
-}
-.card{
+  }
+  .card{
       float: right;
-      background: peru;
+      background: transparent;
       color: black;
       font-weight: bolder;
-      font-size: 50px;
-}
+      font-size: 40px;
+  }
 body {
     background-color: black;
     font-size: xx-large;
@@ -48,6 +47,7 @@ body {
     padding: 5px;
   }
   
+  /* Clearfix (clear floats) */
   .row::after {
     content: "";
     clear: both;
