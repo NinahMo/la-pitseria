@@ -19,7 +19,6 @@ A website that contains a variety of pizza types, sizes, crusts and toppings for
 - javaScript
 - jquery
 - Bootstrap
-## Behavior Driven Development.
 
 ## Support and contact details
 For any difficulties accessing the code, comments, concerns, ideas or any form of questions. Kindly contact me at ninahb746@gmail.com 
