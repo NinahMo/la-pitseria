@@ -14,7 +14,7 @@ function Order (pizzaSize, crust) {
  this.Topping2 = 100;
 
  this.pizzaPrice = 0;
-
+   
  this.pizzaNumber  = 1;
 
  this.pizzaNumbers = [];
