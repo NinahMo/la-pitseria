@@ -1,5 +1,5 @@
 
-var del = 400;
+var del = 300;
 
 var PizzatotalPrice = [];
 
@@ -9,9 +9,9 @@ function Order (pizzaSize, crust) {
 
  this.crust = crust;
 
- this.Topping1 = 500;
+ this.Topping1 = 50;
 
- this.Topping2 = 1000;
+ this.Topping2 = 100;
 
  this.pizzaPrice = 0;
 
@@ -25,29 +25,29 @@ Order.prototype.pizzaCost = function () {
 
  if (this.pizzaSize === "Small") {
 
-   this.pizzaPrice += 2000;
+   this.pizzaPrice += 600;
 
  } else if (this.pizzaSize === "Medium") {
 
-   this.pizzaPrice += 3000;
+   this.pizzaPrice += 800;
 
  } else if (this.pizzaSize === "Large") {
 
-   this.pizzaPrice += 4000;
+   this.pizzaPrice += 1000;
 
  }
 
  if (this.crust === "crispy") {
 
-   this.pizzaPrice += 1000;
+   this.pizzaPrice += 100;
 
  } else if (this.crust === "stuffed") {
 
-   this.pizzaPrice += 1500;
+   this.pizzaPrice += 150;
 
  } else if (this.crust === "glutenFree") {
 
-   this.pizzaPrice += 2000;
+   this.pizzaPrice += 200;
 
  }
 
