@@ -1,19 +1,21 @@
 body{
-    background-image: url(images/pizza.bg.jpg);
+    background-image: url(images/lala2.jpg);
     background-size: cover;
     font-family: 'Niconne', cursive;
 
 }
 .jumbotron{
     height: 150px;
-    background-color: peru;
+    background-color: transparent;
     color: black;
     text-align: center;
     padding: 25px;
-    font-family: 'Frijole', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
 
 }
-
+h4{
+    color: rgb(253, 249, 249);
+}
 .btn{
     float: right;
 }
@@ -118,3 +120,6 @@ label>input:checked ~ .pizza-box{
     font-weight: 500 !important;
     border-top: 2px solid black;
 }  
+.card {
+    background-color: rgb(253, 249, 249);
+}

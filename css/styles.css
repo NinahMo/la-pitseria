@@ -1,36 +1,37 @@
 h4 {
-    font-weight: bold;
-    color: orangered;
+    color: rgb(253, 249, 249);
 }
 body {
-    background-image: url(images/pizza.bg.jpg);
+    background-image: url(images/lala2.jpg);
     background-size: cover;
     font-family: 'Niconne', cursive;
   
   }
   .first {
     text-align: center;
-    font-family: 'Frijole', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
     padding: 25px;
-    color: black;
+    color: white;
     height: 150px;
   }
   .btn {
-    float: right;
+    float: center;
+    width: 100px;
   }
   .one {
     padding: 10px;
     float: right; 
     background: transparent;
     color: white;
-    font-family: "Henny Penny", cursive;
+    font-family: 'Gloria Hallelujah', cursive;
   }
   .card{
-      float: right;
+      float: center;
       background: transparent;  
-      color: black;
+      color: rgb(253, 249, 249);
       font-weight: bolder; 
       font-size: 40px; 
+      font-family: 'Gloria Hallelujah', cursive;
   }
 body {
     background-color: black;
@@ -57,16 +58,16 @@ body {
     padding: 50;
     margin: 0;
     position: relative;
-    font-family: 'Lobster', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
     text-align: center;
 }
 .section2{
-    font-family: 'Satisfy', cursive;
-    text-align: center;
+  font-family: 'Gloria Hallelujah', cursive;
+  text-align: center;
 
 }
 .section3{
-font-family: 'Caveat', cursive;
+  font-family: 'Gloria Hallelujah', cursive;
 }
 .card-deck {
     padding: 5% 1%;
@@ -78,11 +79,12 @@ font-family: 'Caveat', cursive;
     background: transparent;
     text-align: center;
     margin: 10px 0;
-    position: relative;       
+    position: relative;  
+    font-family: 'Gloria Hallelujah', cursive;     
 }
 .form{
     background: transparent;
     color:gray;
-    font-family: 'New Rocker', cursive;
+    font-family: 'Gloria Hallelujah', cursive;
     font-size: 20px;
 }
